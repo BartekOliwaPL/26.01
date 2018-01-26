@@ -1,7 +1,4 @@
-import com.infoshare.Animal;
-import com.infoshare.Cat;
-import com.infoshare.Dog;
-import com.infoshare.Fraction;
+import com.infoshare.*;
 
 import java.util.Scanner;
 
@@ -39,18 +36,30 @@ public class Main {
         myCat.eat();
         myDog.eat();
         */
-        Fraction value = new Fraction();
+        DotScanner value = new DotScanner();
+
+        String dowolnyTekst;
 
          /*value.setCounter();
         value.setDenominator();*/
 
-        Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
         System.out.println("podaj licznik: ");
         value.setCounter(scanner.nextInt());
         System.out.println("podaj mianownik: ");
         value.setDenominator(scanner.nextInt());
 
-        value.value();
+        value.value();*/
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("podaj tekst do azalizy: ");
+        dowolnyTekst = (scanner.nextLine());
+        System.out.println(dowolnyTekst);
+
+        String[] dowolnyTekstArray = dowolnyTekst.split("\\.");
+        for (int i = 0 ; i < dowolnyTekstArray.length; i++){
+                    }
+        System.out.println(dowolnyTekstArray.length-1);
 
     }
 }
